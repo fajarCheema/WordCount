@@ -10,7 +10,7 @@ export default function WordCount() {
     setText(event.target.value);
   };
 
-  const ResetButtonClicked = () => {
+  const handleResetButtonClick = () => {
     setText("");
   };
 
@@ -40,7 +40,7 @@ export default function WordCount() {
         <div> CHARACTERS</div>
         <div>{sentences > 1 ? "SENTENCES" : "SENTENCE"}</div>
       </div>
-      <button className="Reset" onClick={ResetButtonClicked}>
+      <button className="Reset" onClick={handleResetButtonClick}>
         Reset
       </button>
     </div>
